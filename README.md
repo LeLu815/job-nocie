@@ -148,10 +148,149 @@ https://teamsparta.notion.site/B08-6b1cc4ee67bf4afdb4b7f584ea810552
 <br>
 
 
+## 📂 폴더 구조
+
 <details>
-<summary>📂 폴더구조</summary>
+<summary>폴더 구조</summary>
 <br>
 
+```
+
+📦src
+ ┣ 📂app
+ ┃ ┣ 📂(providers)
+ ┃ ┃ ┣ 📂(auth)
+ ┃ ┃ ┃ ┣ 📂log-in
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂sign-up
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┃ ┣ 📂icons
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArrowDownSvg.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArrowLeftSvg.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜ArrowRightSvg.tsx
+ ┃ ┃ ┃ ┃ ┃ ┣ 📜EyeCloseSvg.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜EyeOpenSvg.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜AddBtn.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜Button.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜FileButton.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜Header.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜Input.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜InputLine.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜PhoneInputSection.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜SignUpTerms.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜WorkBox.tsx
+ ┃ ┃ ┃ ┗ 📜layout.tsx
+ ┃ ┃ ┣ 📂(root)
+ ┃ ┃ ┃ ┣ 📂(route)
+ ┃ ┃ ┃ ┃ ┗ 📂detail-page
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂[id]
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┃ ┃ ┗ 📂_components
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜ApplyButton.tsx
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜UserResumes.tsx
+ ┃ ┃ ┃ ┣ 📂community
+ ┃ ┃ ┃ ┃ ┣ 📜CommentModal.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜CommunityPage.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜page.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜PostList.tsx
+ ┃ ┃ ┃ ┃ ┣ 📜PostModal.tsx
+ ┃ ┃ ┃ ┃ ┗ 📜SideBar.tsx
+ ┃ ┃ ┃ ┣ 📂new-resume
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂profile
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂resume
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📜layout.tsx
+ ┃ ┃ ┃ ┣ 📜not-found.tsx
+ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┣ 📂_components
+ ┃ ┃ ┃ ┣ 📂icons
+ ┃ ┃ ┃ ┃ ┗ 📜BarsSvg.tsx
+ ┃ ┃ ┃ ┣ 📜DropDown.tsx
+ ┃ ┃ ┃ ┗ 📜Modal.tsx
+ ┃ ┃ ┗ 📜layout.tsx
+ ┃ ┣ 📂api
+ ┃ ┃ ┣ 📂auth
+ ┃ ┃ ┃ ┣ 📂code-global
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂like
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂log-in
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂log-out
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂me
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂post
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂resume
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┗ 📂sign-up
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂community
+ ┃ ┃ ┃ ┗ 📂post
+ ┃ ┃ ┃ ┃ ┗ 📂[postId]
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂detail-page
+ ┃ ┃ ┃ ┣ 📂file
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┣ 📂resumes
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┃ ┗ 📂[id]
+ ┃ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┣ 📂jobs
+ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┃ ┗ 📂profile
+ ┃ ┃ ┃ ┗ 📜route.ts
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜not-found.tsx
+ ┣ 📂components
+ ┃ ┣ 📂Carousel
+ ┃ ┃ ┗ 📜Carousel.tsx
+ ┃ ┣ 📂EduDropDown
+ ┃ ┃ ┗ 📜EduDropDown.tsx
+ ┃ ┣ 📂Header
+ ┃ ┃ ┗ 📜Header.tsx
+ ┃ ┣ 📂JobDropDown
+ ┃ ┃ ┗ 📜JobDropDown.tsx
+ ┃ ┣ 📂JobList
+ ┃ ┃ ┣ 📜constant.ts
+ ┃ ┃ ┗ 📜JobList.tsx
+ ┃ ┣ 📂Loading
+ ┃ ┃ ┗ 📜LoadingSpinner.tsx
+ ┃ ┣ 📂LocationDropDown
+ ┃ ┃ ┗ 📜LocationDropDown.tsx
+ ┃ ┗ 📂UserProfile
+ ┃ ┃ ┗ 📜UserProfileImage.tsx
+ ┣ 📂contexts
+ ┃ ┣ 📜auth.context.tsx
+ ┃ ┗ 📜modal.context.tsx
+ ┣ 📂hooks
+ ┃ ┗ 📂query
+ ┃ ┃ ┗ 📜useGetJobs.ts
+ ┣ 📂lib
+ ┃ ┗ 📜fetchJobs.ts
+ ┣ 📂query
+ ┃ ┗ 📜queryClient.tsx
+ ┣ 📂store
+ ┃ ┣ 📜search.store.ts
+ ┃ ┗ 📜zustand.store.ts
+ ┣ 📂supabase
+ ┃ ┣ 📜client.ts
+ ┃ ┣ 📜middleware.ts
+ ┃ ┣ 📜server.ts
+ ┃ ┗ 📜types.ts
+ ┣ 📂types
+ ┃ ┣ 📜jobDetailType.ts
+ ┃ ┗ 📜jobs.types.ts
+ ┗ 📜middleware.ts
+
+```
+
 </details>
+
 
 
